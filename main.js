@@ -22,10 +22,6 @@ function createPlayer(player1, playerName, life, img) {
 	$img.src = img
 
 
-
-
-	let $arenas = document.querySelector('.arenas')
-
 	$arenas.appendChild($player1)
 	$player1.appendChild($progressBar)
 	$player1.appendChild($character)
@@ -35,6 +31,8 @@ function createPlayer(player1, playerName, life, img) {
 	$character.appendChild($img)
 
 }
+
+let $arenas = document.querySelector('.arenas')
 
 createPlayer('player1', 'Sonya', 90, 'http://reactmarathon-api.herokuapp.com/assets/sonya.gif')
 createPlayer('player2', 'kitana', 50, 'http://reactmarathon-api.herokuapp.com/assets/kitana.gif')
